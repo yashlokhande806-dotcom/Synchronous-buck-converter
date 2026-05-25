@@ -1,0 +1,33 @@
+12V to 3V DC–DC Buck Converter Using Arduino PWM Control
+
+This project demonstrates the design and implementation of a DC–DC buck converter for converting a 12 V input supply to a regulated 3 V output. The converter operates on the switching principle, providing efficient voltage reduction compared to linear regulators.
+
+The system consists of an Arduino UNO, MOSFET switching stage, inductor, capacitor filter, diode, and feedback components mounted on a breadboard prototype. The Arduino generates a PWM signal to control the switching operation and regulate the output voltage.
+
+Working Principle
+A 12 V DC input is applied to the converter circuit.
+The Arduino generates a PWM signal which drives the MOSFET switching element.
+During ON time, energy is stored in the inductor.
+During OFF time, the stored energy is released through the diode and filter capacitor to the load.
+By adjusting the duty cycle, the converter steps down the voltage from 12 V to approximately 3 V DC.
+Main Components Used
+Arduino UNO (PWM generation)
+MOSFET switches
+Inductor coil
+Electrolytic output capacitor
+Fast recovery / Schottky diode
+Resistors
+LED indicator
+Breadboard prototype setup
+Specifications
+Input Voltage: 12 V DC
+Output Voltage: 3 V DC
+Converter Type: Buck Converter
+Control Method: PWM based switching
+Application: Low-voltage electronics, embedded systems, battery-powered devices
+Applications
+Sensor power supply
+Embedded systems
+IoT devices
+Microcontroller circuits
+Portable electronics
